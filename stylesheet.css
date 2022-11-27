@@ -1,10 +1,15 @@
 body {
-    background:            linear-gradient(to left top, blue, rgb(190, 0, 0));
-    background-attachment: fixed; /*edit*/
+  background:            linear-gradient(to left top, blue, rgb(190, 0, 0));
+  background-attachment: fixed; /*edit*/
 }
 
-#centre {
-    text-align: ce;
+.centered{
+    text-align: center;
+    margin: auto;
+}
+.right{
+  text-align: right;
+  margin: auto;
 }
 
 .button {
@@ -24,6 +29,29 @@ body {
     margin: auto;
     color: rgb(255, 255, 255);
   }
+.button1{
+    padding: 10px 30px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d4d4d4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 4px;
+  margin: auto;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 h1 {
     color: rgb(0, 140, 255);
@@ -44,9 +72,4 @@ p2 {
     margin: auto;
     font-family: monospace;
     margin: 70px;
-}
-
-.centered{
-    text-align: center;
-    margin: auto;
 }
