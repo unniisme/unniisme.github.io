@@ -1,0 +1,52 @@
+body {
+    background:            linear-gradient(to left top, blue, rgb(190, 0, 0));
+    background-attachment: fixed; /*edit*/
+}
+
+#centre {
+    text-align: ce;
+}
+
+.button {
+    background-color: #4a99be62; /* Green */
+    color: white;
+    font-family: monospace;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+  }
+.button:hover {
+    background-color: #39948c; /* Green */
+    margin: auto;
+    color: rgb(255, 255, 255);
+  }
+
+h1 {
+    color: rgb(0, 140, 255);
+    text-align: center;
+    margin-top: 300px;
+    font-family: Montserrat;
+  }
+p1 {
+    color: red;
+    text-align: center;
+    margin: auto;
+    font-family: monospace;
+    padding: 20px
+  }
+p2 {
+    color: purple;
+    text-align: center;
+    margin: auto;
+    font-family: monospace;
+    margin: 70px;
+}
+
+.centered{
+    text-align: center;
+    margin: auto;
+}
