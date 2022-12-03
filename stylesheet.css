@@ -7,6 +7,12 @@ body {
     text-align: center;
     margin: auto;
 }
+
+.screen{
+  position: fixed;
+  z-index: -100;
+}
+
 .right{
   text-align: right;
   margin: auto;
@@ -56,7 +62,6 @@ body {
 h1 {
     color: rgb(0, 140, 255);
     text-align: center;
-    margin-top: 300px;
     font-family: Montserrat;
   }
 p1 {
@@ -72,4 +77,12 @@ p2 {
     margin: auto;
     font-family: monospace;
     margin: 70px;
+}
+
+br {
+  line-height: 200%;
+}
+
+brbig{
+  line-height: 300px;
 }
