@@ -13,6 +13,11 @@ body {
   z-index: -100;
 }
 
+#canvas {
+  position: fixed;
+  z-index: -100;
+}
+
 .right{
   text-align: right;
   margin: auto;
@@ -81,8 +86,4 @@ p2 {
 
 br {
   line-height: 200%;
-}
-
-brbig{
-  line-height: 300px;
 }
