@@ -1,0 +1,83 @@
+/* Set body margin and padding to 0 */
+body {
+  background-color: #000;
+  color: #f0f8ff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style navigation links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav li a:hover {
+  background-color: #00ff6a;
+  color: #2f2f2f;
+}
+
+/* Style list items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Override Bootstrap's default link color */
+a {
+  color: #fff;
+}
+
+/* Increase header h1 font size */
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 0 1rem #00ff6a;
+  margin-bottom: 2rem;
+}
+
+/* Add margin to container */
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
