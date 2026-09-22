@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #f3f4f6;
+    color: #111827;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: min(700px, 92vw);
+    padding: 32px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#progress {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* Flashcard */
+
+.card-container {
+    perspective: 1000px;
+}
+
+.flashcard {
+    min-height: 400px;
+
+    padding: 45px;
+
+    background: white;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 2px 6px rgba(0, 0, 0, 0.04);
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.flashcard:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.10),
+        0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.flashcard:active {
+    transform: translateY(0);
+}
+
+.flashcard:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+
+/* Card fields */
+
+.card-content {
+    width: 100%;
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.card-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.value {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.hidden-value {
+    color: #9ca3af;
+    letter-spacing: 0.2em;
+}
+
+
+/* Hint */
+
+.click-hint {
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+/* Controls */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 24px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 18px;
+
+    background: #111827;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+button:hover {
+    background: #374151;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#shuffleBtn {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+#shuffleBtn:hover {
+    background: #d1d5db;
+}
+
+.keyboard-hint {
+    margin-top: 18px;
+
+    text-align: center;
+
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .app {
+        padding: 20px 0;
+    }
+
+    .flashcard {
+        min-height: 350px;
+        padding: 28px;
+    }
+
+    .card-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+    }
+
+    button {
+        flex: 1;
+    }
+}
